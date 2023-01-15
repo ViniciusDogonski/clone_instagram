@@ -7,8 +7,8 @@ const mongoConnection = process.env.MONGO_URI
 
 
 const app = express()
-
-mongoose.connect(mongoConnection,{},()=>console.log("connected DB"))
+mongoose.set("strictQuery", true);
+mongoose.connect(mongoConnection, {}, () => console.log("connected DB"))
 
 app.use(express.json())
 app.use(router)

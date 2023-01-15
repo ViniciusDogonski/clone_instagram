@@ -10,8 +10,18 @@ const schema = new mongoose.Schema({
     password: {
         type: String,
         required: true
+    },
+    username: {
+        type: String,
+        required: true
+    },
+    name: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String
     }
-
 })
 
 module.exports = mongoose.model('User', schema)
