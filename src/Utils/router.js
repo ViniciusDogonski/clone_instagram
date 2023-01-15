@@ -5,6 +5,10 @@ const router = Router()
 
 //criando usuario
 router.post('/users', UserController.createUser)
+
+//listando users
+router.get('/users', UserController.listUsers)
+
 //login
 
 // logout

@@ -34,5 +34,24 @@ module.exports = {
             return res.status(400).send(error)
         }
 
+    },
+
+    async listUsers(req, res) {
+
+        try {
+
+            const allUsers = await User.find()
+
+            return res.status(200).send({
+                message: 'All users fond',
+                data: allUsers
+            })
+
+        } catch (error) {
+            return res.status(400).send(error)
+        }
     }
+
+
+
 }
