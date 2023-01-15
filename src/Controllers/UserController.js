@@ -16,7 +16,13 @@ module.exports = {
 
         try {
 
-            console.log("to aq")
+            const userAlready = await User.findOne({
+                email
+            })
+
+            if (userAlready) return res.status(400).send({ message: 'User alread exists. try another EMAIL' })
+
+            // console.log("to aq")
             const createdUser = await User.create({
                 email,
                 password,
