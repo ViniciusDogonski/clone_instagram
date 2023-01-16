@@ -19,8 +19,8 @@ router.post('/login', LoginController.login)
 //feed
 router.post('/posts', PostController.createPost)
 router.get('/posts', PostController.listAllPosts)
-router.delete('/post/:post_id', PostController.deletePost)
-router.put('/post/:post_id', PostController.editPost)
+router.delete('/posts/:post_id', PostController.deletePost)
+router.put('/posts/:post_id', PostController.editPost)
 
 //postar foto
 
