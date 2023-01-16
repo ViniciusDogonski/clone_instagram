@@ -60,9 +60,8 @@ Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [Node.js](http://www.dropwizard.io/1.0.2/docs/) - Runtime
+* [npm](https://maven.apache.org/) - Gerente de Dependência
 
 ## 🖇️ Colaborando
 
